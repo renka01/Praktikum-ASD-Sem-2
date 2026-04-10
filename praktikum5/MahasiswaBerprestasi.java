@@ -1,8 +1,12 @@
 package praktikum5;
 
 public class MahasiswaBerprestasi {
-    Mahasiswa[] listMhs = new Mahasiswa[5];
+    Mahasiswa[] listMhs;
     int idx;
+
+    public MahasiswaBerprestasi(int kuota) {
+        listMhs = new Mahasiswa[kuota];
+    }
 
     void tambah(Mahasiswa m) {
         if (idx < listMhs.length) {
@@ -50,7 +54,7 @@ public class MahasiswaBerprestasi {
         for (int i = 1; i < listMhs.length; i++) {
             Mahasiswa temp = listMhs[i];
             int j = i;
-            while (j > 0 && listMhs[j - 1].ipk > temp.ipk) {
+            while (j > 0 && listMhs[j - 1].ipk < temp.ipk) {
                 listMhs[j] = listMhs[j - 1];
                 j--;
             }
