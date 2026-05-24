@@ -1,7 +1,6 @@
 package praktikum5;
 
 public class SortingMain15 {
-    public class SortingMain {
     public static void main(String[] args) {
         // --- 1. Test Bubble Sort ---
         int a[] = {20, 10, 2, 7, 12};
@@ -32,5 +31,4 @@ public class SortingMain15 {
         System.out.println("Data sudah diurutkan dengan INSERTION SORT (ASC)");
         dataurut3.tampil();
     }
-}
 }
