@@ -45,7 +45,7 @@ public class DoubleLinkList15 {
         }
         Node15 newNode = new Node15(current,data,current.next);
         if (current == tail){
-            current.next.prev = newNode;
+            newNode.prev = current;
             current.next = newNode;
             tail = newNode;
         } else {
